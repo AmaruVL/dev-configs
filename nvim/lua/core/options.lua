@@ -11,4 +11,13 @@ vim.o.incsearch = true
 vim.o.hlsearch = false
 -- vim.o.clipboard = "unnamedplus"
 
+-- Desactivar comentarios automáticos en saltos de linea
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    vim.opt.formatoptions:remove { "c", "r", "o" }
+  end,
+})
+
+
 vim.cmd("colorscheme default")
