@@ -12,5 +12,5 @@ require("lazy").setup({
 
 -- Si estás en VSCode, carga keymaps especiales
 if vim.g.vscode then
-  require("vscode.keymaps")
+  require("vsconfig.keymaps")
 end

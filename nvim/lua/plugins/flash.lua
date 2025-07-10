@@ -14,7 +14,23 @@ return {
       "s",
       mode = { "n", "x", "o" },
       function() require("flash").jump() end,
-      desc = "Flash"
+      desc = "Flash (inicio del match)"
+    },
+    {
+      "S",
+      mode = { "n", "x", "o" },
+      function()
+        require("flash").jump({
+          jump = { pos = "end" },
+        })
+      end,
+      desc = "Flash (final del match)"
+    },
+    {
+      "r",
+      mode = { "n", "x", "o" },
+      function() require("flash").remote() end,
+      desc = "Flash Remote"
     },
     {
       "gs",
