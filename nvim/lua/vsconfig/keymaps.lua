@@ -19,6 +19,15 @@ keymap({ "n", "v" }, "<leader>sp", function() vscode("workbench.actions.view.pro
 -- keymap({ "n", "v" }, "<leader>cp", function() vscode("workbench.action.showCommands") end, opts)
 -- keymap({ "n", "v" }, "<leader>pr", function() vscode("code-runner.run") end, opts)
 -- keymap({ "n", "v" }, "<leader>fd", function() vscode("editor.action.formatDocument") end, opts)
+keymap({ "n", "v" }, "<leader>h", function() vscode("workbench.action.focusLeftGroup") end, opts)
+keymap({ "n", "v" }, "<leader>j", function() vscode("workbench.action.focusBelowGroup") end, opts)
+keymap({ "n", "v" }, "<leader>k", function() vscode("workbench.action.focusAboveGroup") end, opts)
+keymap({ "n", "v" }, "<leader>l", function() vscode("workbench.action.focusRightGroup") end, opts)
+keymap({ "v" }, "<", function() vscode("editor.action.outdentLines") end, opts)
+keymap({ "v" }, ">", function() vscode("editor.action.indentLines") end, opts)
+keymap({ "v" }, "J", function() vscode("editor.action.moveLinesDownAction") end, opts)
+keymap({ "v" }, "K", function() vscode("editor.action.moveLinesUpAction") end, opts)
+
 
 -- Harpoon (instalar extensión vscode-harpoon)
 keymap({ "n", "v" }, "<leader>ha", function() vscode("vscode-harpoon.addEditor") end, opts)
