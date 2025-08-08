@@ -8,6 +8,10 @@ return {
         number = true,         -- número absoluto
         relativenumber = true, -- número relativo
       },
+      filters = {
+        dotfiles = false,       -- mostrar archivos ocultos
+        custom = { "^.git$" },  -- ocultar solo la carpeta .git
+      },
     })
 
     -- Atajo para abrir/cerrar el árbol
