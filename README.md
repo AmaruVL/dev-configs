@@ -1,8 +1,25 @@
-# Configuración de Neovim
+# Configuración personal de desarrollo
 
-Este repositorio contiene mi configuración personalizada de **Neovim**.
+Este repositorio contiene mis configuraciones y scripts para optimizar mi entorno de desarrollo.
 
-## Instalación rápida
+## 📂 Estructura del repositorio
+
+- **nvim/** → Configuración personalizada de **Neovim**.
+  - `init.lua` → Archivo principal de configuración.
+  - `lua/core/` → Opciones y mapeos de teclado básicos.
+  - `lua/plugins/` → Configuración de plugins.
+  - `lua/vsconfig/` → Configuración específica para usar Neovim como editor de Visual Studio Code.
+  - `script.sh` → Script auxiliar relacionado con Neovim.
+- **vscode/** → Configuraciones y ajustes de **Visual Studio Code**.
+  - `settings.json` → Configuración principal.
+  - `keybindings.json` → Atajos de teclado.
+- **terminal/** → Scripts y comandos útiles para la terminal.
+  - `commands.sh` → Lista de comandos comunes.
+- **README.md** → Este archivo con la guía de uso.
+
+---
+
+## 🚀 Instalación rápida de configuracion de Neovim
 
 ### Linux / macOS
 ```bash
