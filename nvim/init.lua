@@ -7,7 +7,8 @@ require("core.lazy")
 require("lazy").setup({
   require ("plugins.surround"),
   require ("plugins.flash"),
-  require ("plugins.treesitter"),
+  require ("plugins.nvimtree"),
+  -- require ("plugins.treesitter"),
 })
 
 -- Si estás en VSCode, carga keymaps especiales

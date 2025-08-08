@@ -1,0 +1,44 @@
+# Archivos de swap, backup y undo de Vim/Neovim
+*.swp
+*.swo
+*.swm
+*.swn
+*.tmp
+*.bak
+*.un~
+
+# Directorio de archivos undo de Vim
+undo/
+*.undo
+
+# Directorio de plugin managers (si no quieres subir plugins)
+pack/
+site/pack/*/start/*
+site/pack/*/opt/*
+
+# Lazy.nvim y otros gestores
+lazy-lock.json
+site/pack/packer/start/*
+site/pack/packer/opt/*
+site/lazy/*
+
+# Archivos de sesión
+Session.vim
+*.session
+
+# Archivos temporales de LSP
+.lsp/
+.lsp-cache/
+.lsp_log
+
+# Logs
+log
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración local que no quieras versionar
+init.local.lua
+lua/local.lua

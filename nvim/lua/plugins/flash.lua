@@ -17,7 +17,7 @@ return {
       desc = "Flash (inicio del match)"
     },
     {
-      "S",
+      "gs",
       mode = { "n", "x", "o" },
       function()
         require("flash").jump({
@@ -26,17 +26,17 @@ return {
       end,
       desc = "Flash (final del match)"
     },
-    {
-      "r",
-      mode = { "n", "x", "o" },
-      function() require("flash").remote() end,
-      desc = "Flash Remote"
-    },
-    {
-      "gs",
-      mode = { "n", "x", "o" },
-      function() require("flash").treesitter() end,
-      desc = "Flash Treesitter"
-    },
+    -- {
+    --   "r",
+    --   mode = { "n", "x", "o" },
+    --   function() require("flash").remote() end,
+    --   desc = "Flash Remote"
+    -- },
+    -- {
+    --   "gs",
+    --   mode = { "n", "x", "o" },
+    --   function() require("flash").treesitter() end,
+    --   desc = "Flash Treesitter"
+    -- },
   }
 }
