@@ -22,7 +22,21 @@ Este repositorio contiene mis configuraciones y scripts para optimizar mi entorn
 
 ---
 
-## 🚀 Instalación rápida de Neovim
+## 🚀 Instalación de Neovim
+
+### Linux / macOS
+
+```bash
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+---
+
+## 📥 Descargar y aplicar configuración de Neovim
 
 ### Linux / macOS
 
@@ -42,19 +56,3 @@ New-Item -ItemType Directory -Force "$env:LOCALAPPDATA"
 Move-Item "dev-configs\nvim" "$env:LOCALAPPDATA\nvim"
 Remove-Item -Recurse -Force "dev-configs"
 ```
-
----
-
-## 📥 Instalación/Actualización de Neovim desde la web (Linux con bash)
-
-Si deseas instalar o actualizar **Neovim** a la última versión disponible directamente desde GitHub:
-
-```bash
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
-echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.bashrc
-source ~/.bashrc
-```
-
-Esto descargará la última versión estable, eliminará cualquier instalación previa en `/opt/nvim` y actualizará tu `PATH` para usar el nuevo binario.
