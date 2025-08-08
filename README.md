@@ -23,11 +23,19 @@ Este repositorio contiene mis configuraciones y scripts para optimizar mi entorn
 
 ### Linux / macOS
 ```bash
-git clone https://github.com/AmaruVL/dev-configs.git && mv dev-configs/nvim ~/.config/nvim && rm -rf dev-configs
+git clone https://github.com/AmaruVL/dev-configs.git
+mkdir -p ~/.config
+mv dev-configs/nvim ~/.config/nvim
+rm -rf dev-configs
 ````
 
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/AmaruVL/dev-configs.git; Move-Item dev-configs\nvim $env:LOCALAPPDATA\nvim; Remove-Item -Recurse -Force dev-configs
+git clone https://github.com/AmaruVL/dev-configs.git
+if (!(Test-Path "$env:LOCALAPPDATA\nvim")) {
+    New-Item -Path "$env:LOCALAPPDATA\nvim" -ItemType Directory
+}
+Move-Item -Path "dev-configs\nvim" -Destination "$env:LOCALAPPDATA\nvim" -Force
+Remove-Item -Recurse -Force dev-configs
 ```
