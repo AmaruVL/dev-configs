@@ -1,21 +1,4 @@
 {
-  // FORMATEADORES POR LENGUAJE
-  "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[handlebars]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[snippets]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[sql]": {
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
-  },
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  },
-
   // EDITOR GENERAL
   "editor.tabSize": 2,
   "editor.lineNumbers": "relative",
@@ -104,6 +87,28 @@
   // SEGURIDAD
   "security.promptForLocalFileProtocolHandling": false,
 
+  // OPTIMIZACIÓN PARA EXTENSIONES
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  
+  // FORMATEADORES POR LENGUAJE
+  "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+
   // EXTENSIONES Y CONFIGS ESPECÍFICAS
   "tailwind-fold.autoFold": false,
   "tailwind-fold.foldStyle": "QUOTES",
@@ -113,10 +118,6 @@
   "scm.experimental.showHistoryGraph": true,
   "Prettier-SQL.keywordCase": "upper",
   "Prettier-SQL.expressionWidth": 80,
-  "Prettier-SQL.SQLFlavourOverride": "postgresql",
-
-  // OPTIMIZACIÓN PARA EXTENSIONES
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  }
+  "Prettier-SQL.SQLFlavourOverride": "postgresql"
 }
+
