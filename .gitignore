@@ -42,3 +42,6 @@ Thumbs.db
 # Archivos de configuración local que no quieras versionar
 init.local.lua
 lua/local.lua
+
+# Archivos extras o temporales
+temp
