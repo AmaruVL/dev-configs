@@ -41,6 +41,12 @@
     "command": "-editor.unfoldAll",
     "when": "editorTextFocus && foldingEnabled"
   },
+  // Para solucionar bug de vscode-nvim que no respeta lo mapeado en nvim config
+  {
+    "key": "ctrl+c",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "textInputFocus && neovim.mode == 'visual'"
+  },
   {
     "key": "ctrl+alt+enter",
     "command": "github.copilot.generate",

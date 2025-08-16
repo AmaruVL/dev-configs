@@ -17,6 +17,3 @@ keymap("n", "H", ":tabprevious<CR>", opts)
 
 -- Utilities
 keymap("n", "<C-a>", "ggVG", opts) -- Seleccionar todo
-
-
-keymap({ "n", "v", "i" }, "<C-c>", "<Nop>", opts)

@@ -39,7 +39,7 @@
   "workbench.colorTheme": "One Dark Pro Monokai Darker",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.externalBrowser": " brave-browser",
-  "workbench.sideBar.location": "right",
+  // "workbench.sideBar.location": "right",
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.list.smoothScrolling": true,
   "workbench.tree.enableStickyScroll": true,

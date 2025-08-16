@@ -56,3 +56,4 @@ New-Item -ItemType Directory -Force "$env:LOCALAPPDATA"
 Move-Item "dev-configs\nvim" "$env:LOCALAPPDATA\nvim"
 Remove-Item -Recurse -Force "dev-configs"
 ```
+

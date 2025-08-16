@@ -9,17 +9,20 @@ keymap("n", "L", "<Cmd>Tabnext<CR>", opts)
 keymap("n", "H", "<Cmd>Tabprevious<CR>", opts)
 
 -- Acciones comuness
-keymap({ "v" }, "<C-c>", function() vscode("editor.action.clipboardCopyActionj") end, opts) -- Copiar
+keymap({ "v" }, "<C-c>", function() vscode("editor.action.clipboardCopyActionXD") end, opts) -- Copiar
 keymap({ "v" }, "<C-x>", function() vscode("editor.action.clipboardCutAction") end, opts) -- Cortar
 keymap({ "i" }, "<C-v>", function() vscode("editor.action.clipboardPasteAction") end, opts) -- Pegar (Solo en insert mode)
 
 keymap({ "n" }, "<C-w>b", function() vscode("workbench.action.closeOtherEditors") end, opts) -- Cerrar buffers menos el actual
+keymap({ "n" }, "<C-w>a", function() vscode("workbench.action.closeAllEditors") end, opts) -- Cerrar todos los buffers
+
 
 keymap({ "n", "v" }, "<leader>t", function() vscode("workbench.action.terminal.toggleTerminal") end, opts)
 -- keymap({ "n", "v" }, "<leader>b", function() vscode("editor.debug.action.toggleBreakpoint") end, opts)
 keymap({ "n", "v" }, "<leader>d", function() vscode("editor.action.showHover") end, opts)
 keymap({ "n", "v" }, "<leader>a", function() vscode("editor.action.quickFix") end, opts)
 keymap({ "n", "v" }, "<leader>sp", function() vscode("workbench.actions.view.problems") end, opts)
+
 -- keymap({ "n", "v" }, "<leader>cn", function() vscode("notifications.clearAll") end, opts)
 -- keymap({ "n", "v" }, "<leader>ff", function() vscode("workbench.action.quickOpen") end, opts)
 -- keymap({ "n", "v" }, "<leader>cp", function() vscode("workbench.action.showCommands") end, opts)
