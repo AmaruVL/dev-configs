@@ -8,10 +8,10 @@ local vscode = require("vscode").action
 keymap("n", "L", "<Cmd>Tabnext<CR>", opts)
 keymap("n", "H", "<Cmd>Tabprevious<CR>", opts)
 
--- Acciones comunes
-keymap("", "<C-c>", "<Nop>", opts)
+-- Acciones comuness
+keymap({ "n", "v", "i" }, "<C-c>", "<Nop>")
 
-keymap({ "v" }, "<C-c>", function() vscode("editor.action.clipboardCopyAction") end, opts) -- Copiar
+keymap({ "v" }, "<C-c>", function() vscode("editor.action.clipboardCopyActionj") end, opts) -- Copiar
 keymap({ "v" }, "<C-x>", function() vscode("editor.action.clipboardCutAction") end, opts) -- Cortar
 keymap({ "i" }, "<C-v>", function() vscode("editor.action.clipboardPasteAction") end, opts) -- Pegar (Solo en insert mode)
 
