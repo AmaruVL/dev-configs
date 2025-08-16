@@ -53,7 +53,7 @@ rm -rf dev-configs
 git clone https://github.com/AmaruVL/dev-configs.git
 Remove-Item -Recurse -Force "$env:LOCALAPPDATA\nvim" -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force "$env:LOCALAPPDATA"
-Move-Item "dev-configs\nvim" "$env:LOCALAPPDATA\nvim"
+Move-Item "dev-configs\nvim" "$env:LOCALAPPDATA"
 Remove-Item -Recurse -Force "dev-configs"
 ```
 
