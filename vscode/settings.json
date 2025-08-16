@@ -18,20 +18,6 @@
     "comments": "#818a99"
   },
 
-  // VIM
-  "vim.leader": "<Space>",
-  "vim.easymotion": true,
-  "vim.sneak": true,
-  "vim.sneakUseIgnorecaseAndSmartcase": true,
-  "vim.surround": true,
-  "vim.handleKeys": {
-    "<C-f>": false,
-    "<C-p>": false,
-    "<C-w>": false,
-    "<C-b>": false
-    // "<C-d>": false
-  },
-
   // TERMINAL
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
@@ -48,7 +34,7 @@
 
   // EXPLORER & WORKBENCH
   "explorer.autoReveal": false,
-  "window.zoomLevel": -0.3,
+  "window.zoomLevel": 0,
   "window.titleBarStyle": "custom",
   "workbench.colorTheme": "One Dark Pro Monokai Darker",
   "workbench.iconTheme": "material-icon-theme",
@@ -119,5 +105,20 @@
   "Prettier-SQL.keywordCase": "upper",
   "Prettier-SQL.expressionWidth": 80,
   "Prettier-SQL.SQLFlavourOverride": "postgresql"
+
+  // VIM
+  // "vim.leader": "<Space>",
+  // "vim.easymotion": true,
+  // "vim.sneak": true,
+  // "vim.sneakUseIgnorecaseAndSmartcase": true,
+  // "vim.surround": true,
+  // "vim.handleKeys": {
+  //   "<C-f>": false,
+  //   "<C-p>": false,
+  //   "<C-w>": false,
+  //   "<C-b>": false
+  //   // "<C-d>": false
+  // },
+
 }
 

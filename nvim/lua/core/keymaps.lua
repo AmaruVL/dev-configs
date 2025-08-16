@@ -14,3 +14,6 @@ keymap({"n", "v"}, "<leader>p", "+p", opts)
 -- Tabs
 keymap("n", "L", ":tabnext<CR>", opts)
 keymap("n", "H", ":tabprevious<CR>", opts)
+
+-- Utilities
+keymap("n", "<C-a>", "ggVG", opts) -- Seleccionar todo
