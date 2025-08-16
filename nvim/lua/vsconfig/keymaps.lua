@@ -9,11 +9,13 @@ keymap("n", "L", "<Cmd>Tabnext<CR>", opts)
 keymap("n", "H", "<Cmd>Tabprevious<CR>", opts)
 
 -- Acciones comunes
+keymap("", "<C-c>", "<Nop>", opts)
+
 keymap({ "v" }, "<C-c>", function() vscode("editor.action.clipboardCopyAction") end, opts) -- Copiar
 keymap({ "v" }, "<C-x>", function() vscode("editor.action.clipboardCutAction") end, opts) -- Cortar
 keymap({ "i" }, "<C-v>", function() vscode("editor.action.clipboardPasteAction") end, opts) -- Pegar (Solo en insert mode)
 
-keymap({ "n" }, "<C-w>b", function() vscode("editor.action.closeOtherEditors") end, opts) -- Cerrar buffers menos el actual
+keymap({ "n" }, "<C-w>b", function() vscode("workbench.action.closeOtherEditors") end, opts) -- Cerrar buffers menos el actual
 
 keymap({ "n", "v" }, "<leader>t", function() vscode("workbench.action.terminal.toggleTerminal") end, opts)
 -- keymap({ "n", "v" }, "<leader>b", function() vscode("editor.debug.action.toggleBreakpoint") end, opts)
