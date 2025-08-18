@@ -86,9 +86,14 @@
     "key": "ctrl+t ctrl+l",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
-  }
+  },
 
   // EXTRA
+  {
+    "key": "ctrl+c",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "textInputFocus && neovim.mode == 'visual'"
+  }
   // {
   //   "key": "ctrl+shift+5",
   //   "command": "editor.emmet.action.matchTag"
