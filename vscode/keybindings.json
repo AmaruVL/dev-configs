@@ -31,6 +31,10 @@
     "command": "workbench.view.explorer"
   },
   {
+    "key": "ctrl+e ctrl+g",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
     "key": "ctrl+e ctrl+f",
     "command": "workbench.files.action.showActiveFileInExplorer"
   },
