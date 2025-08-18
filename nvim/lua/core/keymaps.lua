@@ -17,5 +17,4 @@ keymap("n", "H", ":tabprevious<CR>", opts)
 
 -- Utilities
 keymap("n", "<C-a>", "ggVG", opts) -- Seleccionar todo
-keymap("i", "jj", "<Esc>", opts)
-keymap("i", "<Esc>", "<Nop>", opts)
+keymap("i", "jj", "<Esc>", opts) -- Salir del modo de inserción
