@@ -78,7 +78,7 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  
+
   // FORMATEADORES POR LENGUAJE
   "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -105,9 +105,16 @@
   "scm.experimental.showHistoryGraph": true,
   "Prettier-SQL.keywordCase": "upper",
   "Prettier-SQL.expressionWidth": 80,
-  "Prettier-SQL.SQLFlavourOverride": "postgresql"
+  "Prettier-SQL.SQLFlavourOverride": "postgresql",
 
-  // VIM
+  // CONFIGURACIÓN DE NEOVIM
+  "vscode-neovim.compositeTimeout": 200,
+  "vscode-neovim.compositeKeys": {
+    "jj": {
+      "command": "vscode-neovim.escape"
+    }
+  }
+
   // "vim.leader": "<Space>",
   // "vim.easymotion": true,
   // "vim.sneak": true,
