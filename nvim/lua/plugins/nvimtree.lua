@@ -7,13 +7,13 @@ return {
       view = {
         number = true,         -- número absoluto
         relativenumber = true, -- número relativo
-        mappings = {
-          list = {
-            { key = { "l", "<CR>", "o" }, action = "edit" },  -- Abrir archivo o carpeta
-            { key = "h", action = "close_node" },             -- Cerrar carpeta
-            { key = "v", action = "vsplit" },                 -- Abrir en vertical
-          },
-        },
+        -- mappings = {
+        --   list = {
+        --     { key = { "l", "<CR>", "o" }, action = "edit" },  -- Abrir archivo o carpeta
+        --     { key = "h", action = "close_node" },             -- Cerrar carpeta
+        --     { key = "v", action = "vsplit" },                 -- Abrir en vertical
+        --   },
+        -- },
       },
       filters = {
         dotfiles = false,       -- mostrar archivos ocultos
