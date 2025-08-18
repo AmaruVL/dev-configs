@@ -1,157 +1,96 @@
-// Place your key bindings in this file to override the defaults
 [
-
+  // KEYBINDINGS FOR EDITOR NAVIGATION <C-i>
   {
-    "key": "ctrl+[Semicolon]",
-    "command": "workbench.action.terminal.toggleTerminal"
-  }, 
+    "key": "ctrl+i ctrl+i",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
   {
-    "key": "shift+alt+p",
+    "key": "ctrl+i ctrl+p",
     "command": "workbench.action.pinEditor",
     "when": "!activeEditorIsPinned"
   },
   {
-    "key": "shift+alt+p",
+    "key": "ctrl+i ctrl+p",
     "command": "workbench.action.unpinEditor",
     "when": "activeEditorIsPinned"
   },
-
   {
-    "key": "ctrl+k shift+enter",
-    "command": "-workbench.action.unpinEditor",
-    "when": "activeEditorIsPinned"
-  },
-  {
-    "key": "alt+q",
+    "key": "ctrl+i ctrl+f",
     "command": "editor.foldAll",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+k ctrl+0",
-    "command": "-editor.foldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "alt+a",
+    "key": "ctrl+i ctrl+u",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus && foldingEnabled"
   },
+
+  // KEYBINDINGS FOR EXPLORER <C-e>
   {
-    "key": "ctrl+k ctrl+j",
-    "command": "-editor.unfoldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  // Para solucionar bug de vscode-nvim que no respeta lo mapeado en nvim config
-  {
-    "key": "ctrl+c",
-    "command": "editor.action.clipboardCopyAction",
-    "when": "textInputFocus && neovim.mode == 'visual'"
+    "key": "ctrl+e ctrl+e",
+    "command": "workbench.view.explorer"
   },
   {
-    "key": "ctrl+alt+enter",
-    "command": "github.copilot.generate",
-    "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+    "key": "ctrl+e ctrl+f",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   },
   {
-    "key": "ctrl+enter",
-    "command": "-github.copilot.generate",
-    "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+    "key": "ctrl+e ctrl+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
   },
-  // ---------- VIM KEYBINDINGS -----------
-  // NAVIGATION
+
+  // KEYBINDINGS FOR CHAT COPILOT <C-c>
   {
-    "key": "ctrl+shift+a",
-    "command": "workbench.action.terminal.focusNext",
+    "key": "ctrl+c ctrl+c",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "ctrl+c ctrl+g",
+    "command": "workbench.panel.chat"
+  },
+
+  // KEYBINDINGS FOR TERMINAL MANAGEMENT <C-t>
+  {
+    "key": "ctrl+t ctrl+g",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+t ctrl+n",
+    "command": "workbench.action.terminal.newWithProfile"
+  },
+  {
+    "key": "ctrl+t ctrl+d",
+    "command": "extension.js-debug.createDebuggerTerminal"
+  },
+  {
+    "key": "ctrl+t ctrl+t",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+t ctrl+s",
+    "command": "workbench.action.terminal.split",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+b",
+    "key": "ctrl+t ctrl+x",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+t ctrl+h",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+j",
-    "command": "workbench.action.togglePanel"
-  },
-  {
-    "key": "ctrl+shift+n",
-    "command": "workbench.action.terminal.new",
+    "key": "ctrl+t ctrl+l",
+    "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+shift+w",
-    "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus"
-  },
-  // FOCUS EDITOR FROM FILE TREE
-  {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusRightGroup",
-    "when": "filesExplorerFocus"
-  },
-  // FILE TREE
-  {
-    "key": "alt+o",
-    "command": "workbench.files.action.showActiveFileInExplorer"
-  },
-  {
-    "key": "alt+j",
-    "command": "workbench.files.action.collapseExplorerFolders"
-  },
-  {
-    "command": "workbench.files.action.focusFilesExplorer",
-    "key": "ctrl+e",
-    "when": "editorTextFocus"
-  },
-  // {
-  //   "key": "n",
-  //   "command": "explorer.newFile",
-  //   "when": "filesExplorerFocus && !inputFocus"
-  // },
-  // {
-    //   "key": "r",
-  //   "command": "renameFile",
-  //   "when": "filesExplorerFocus && !inputFocus"
-  // },
-  // {
-  //   "key": "shift+n",
-  //   "command": "explorer.newFolder",
-  //   "when": "explorerViewletFocus"
-  // },
-  // {
-  //   "key": "shift+a",
-  //   "command": "workbench.action.newWindow",
-  //   "when": "!explorerViewletFocus"
-  // },
-  // {
-  //   "command": "deleteFile",
-  //   "key": "d",
-  //   "when": "filesExplorerFocus && !inputFocus"
-  // },
+  }
 
   // EXTRA
-  {
-    "key": "ctrl+shift+5",
-    "command": "editor.emmet.action.matchTag"
-  },
-  {
-    "key": "alt+v",
-    "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "-editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "alt+i",
-    "command": "editor.action.marker.next",
-    "when": "editorFocus"
-  },
-  {
-    "key": "alt+f8",
-    "command": "-editor.action.marker.next",
-    "when": "editorFocus"
-  }
+  // {
+  //   "key": "ctrl+shift+5",
+  //   "command": "editor.emmet.action.matchTag"
+  // },
 ]

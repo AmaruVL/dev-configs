@@ -17,7 +17,7 @@ keymap({ "n" }, "<C-w>b", function() vscode("workbench.action.closeOtherEditors"
 keymap({ "n" }, "<C-w>a", function() vscode("workbench.action.closeAllEditors") end, opts) -- Cerrar todos los buffers
 
 
-keymap({ "n", "v" }, "<leader>t", function() vscode("workbench.action.terminal.toggleTerminal") end, opts)
+-- keymap({ "n", "v" }, "<leader>t", function() vscode("workbench.action.terminal.toggleTerminal") end, opts)
 -- keymap({ "n", "v" }, "<leader>b", function() vscode("editor.debug.action.toggleBreakpoint") end, opts)
 keymap({ "n", "v" }, "<leader>d", function() vscode("editor.action.showHover") end, opts)
 keymap({ "n", "v" }, "<leader>a", function() vscode("editor.action.quickFix") end, opts)
