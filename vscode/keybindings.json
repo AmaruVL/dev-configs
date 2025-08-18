@@ -43,13 +43,13 @@
     "command": "workbench.files.action.collapseExplorerFolders"
   },
 
-  // KEYBINDINGS FOR CHAT COPILOT <C-c>
+  // KEYBINDINGS FOR CHAT COPILOT <C-r>
   {
-    "key": "ctrl+c ctrl+c",
+    "key": "ctrl+r ctrl+r",
     "command": "workbench.panel.chat.view.copilot.focus"
   },
   {
-    "key": "ctrl+c ctrl+g",
+    "key": "ctrl+r ctrl+g",
     "command": "workbench.panel.chat"
   },
 
