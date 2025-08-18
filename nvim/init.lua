@@ -15,4 +15,3 @@ require("lazy").setup({
 if vim.g.vscode then
   require("vsconfig.keymaps")
 end
-

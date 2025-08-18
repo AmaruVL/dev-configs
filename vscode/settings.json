@@ -44,6 +44,8 @@
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.list.smoothScrolling": true,
   "workbench.tree.enableStickyScroll": true,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.panel.showLabels": false,
   "workbench.colorCustomizations": {
     "editorError.background": "#ff000033",
     "editorError.foreground": "#ff8585",
@@ -127,6 +129,5 @@
   //   "<C-b>": false
   //   // "<C-d>": false
   // },
-
 }
 
