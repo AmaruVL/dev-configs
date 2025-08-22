@@ -68,8 +68,7 @@
   },
   {
     "key": "ctrl+t ctrl+t",
-    "command": "workbench.action.terminal.focus",
-    "when": "editorTextFocus"
+    "command": "workbench.action.terminal.focus"
   },
   {
     "key": "ctrl+t ctrl+s",
