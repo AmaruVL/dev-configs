@@ -12,6 +12,8 @@ keymap("n", "H", "<Cmd>Tabprevious<CR>", opts)
 keymap({ "v" }, "<C-c>", function() vscode("editor.action.clipboardCopyActionXD") end, opts) -- Copiar
 keymap({ "v" }, "<C-x>", function() vscode("editor.action.clipboardCutAction") end, opts) -- Cortar
 keymap({ "i" }, "<C-v>", function() vscode("editor.action.clipboardPasteAction") end, opts) -- Pegar (Solo en insert mode)
+keymap({ "n" }, "<leader>w", function() vscode("workbench.action.closeActiveEditor") end, opts)
+
 
 keymap({ "n" }, "<C-w>b", function() vscode("workbench.action.closeOtherEditors") end, opts) -- Cerrar buffers menos el actual
 keymap({ "n" }, "<C-w>a", function() vscode("workbench.action.closeAllEditors") end, opts) -- Cerrar todos los buffers
