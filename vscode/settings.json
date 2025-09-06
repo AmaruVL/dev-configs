@@ -2,6 +2,7 @@
   // EDITOR GENERAL
   "editor.tabSize": 2,
   "editor.lineNumbers": "relative",
+  "editor.rulers": [120],
   "editor.wordWrap": "on",
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
