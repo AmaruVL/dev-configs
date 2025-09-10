@@ -42,6 +42,15 @@
     "key": "ctrl+e ctrl+c",
     "command": "workbench.files.action.collapseExplorerFolders"
   },
+  {
+    "key": "ctrl+e ctrl+o",
+    "command": "outline.focus"
+  },
+  {
+    "key": "ctrl+e ctrl+l",
+    "command": "outline.collapse"
+  },
+
 
   // KEYBINDINGS FOR CHAT COPILOT <C-r>
   {
@@ -96,9 +105,15 @@
     "key": "ctrl+c",
     "command": "editor.action.clipboardCopyAction",
     "when": "textInputFocus && neovim.mode == 'visual'"
-  }
+  },
   // {
   //   "key": "ctrl+shift+5",
   //   "command": "editor.emmet.action.matchTag"
   // },
+
+  // FOR MAC-OS
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  }
 ]

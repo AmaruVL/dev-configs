@@ -17,6 +17,10 @@ keymap({ "n" }, "<leader>w", function() vscode("workbench.action.closeActiveEdit
 
 keymap({ "n" }, "<C-w>b", function() vscode("workbench.action.closeOtherEditors") end, opts) -- Cerrar buffers menos el actual
 keymap({ "n" }, "<C-w>a", function() vscode("workbench.action.closeAllEditors") end, opts) -- Cerrar todos los buffers
+keymap({ "n" }, "<C-w>w", function() vscode("workbench.action.closeActiveEditor") end, opts) -- Cerrar buffer actual
+
+keymap({ "n", "v" }, "ge", function() vscode("editor.action.marker.next") end, opts) -- Ir al siguiente error/marcador
+keymap({ "n", "v" }, "gE", function() vscode("editor.action.marker.prev") end, opts) -- Ir al error/marcador anterior
 
 
 -- keymap({ "n", "v" }, "<leader>t", function() vscode("workbench.action.terminal.toggleTerminal") end, opts)

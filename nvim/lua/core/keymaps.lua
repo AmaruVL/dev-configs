@@ -18,3 +18,6 @@ keymap("n", "H", ":tabprevious<CR>", opts)
 -- Utilities
 keymap("n", "<C-a>", "ggVG", opts) -- Seleccionar todo
 keymap("i", "jj", "<Esc>", opts) -- Salir del modo de inserción
+
+-- Window management
+keymap("n", "<C-w>w", "<C-w>q", opts) -- Cerrar buffer actual
