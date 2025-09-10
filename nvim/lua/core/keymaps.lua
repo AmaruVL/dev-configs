@@ -20,4 +20,4 @@ keymap("n", "<C-a>", "ggVG", opts) -- Seleccionar todo
 keymap("i", "jj", "<Esc>", opts) -- Salir del modo de inserción
 
 -- Window management
-keymap("n", "<C-w>w", "<C-w>q", opts) -- Cerrar buffer actual
+keymap("n", "<C-w><C-w>", "<C-w>q", opts) -- Cerrar buffer actual
