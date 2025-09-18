@@ -13,18 +13,18 @@ return {
     {
       "s",
       mode = { "n", "x", "o" },
-      function() require("flash").jump() end,
-      desc = "Flash (inicio del match)"
-    },
-    {
-      "gs",
-      mode = { "n", "x", "o" },
       function()
         require("flash").jump({
           jump = { pos = "end" },
         })
       end,
       desc = "Flash (final del match)"
+    },
+    {
+      "gs",
+      mode = { "n", "x", "o" },
+      function() require("flash").jump() end,
+      desc = "Flash (inicio del match)"
     },
     -- {
     --   "r",
