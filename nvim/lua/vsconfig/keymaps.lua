@@ -54,4 +54,3 @@ for i = 1, 9 do
     vscode("vscode-harpoon.gotoEditor" .. i)
   end, opts)
 end
-
