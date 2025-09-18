@@ -26,8 +26,8 @@ return {
     --  mcs (char) y mcw (word). No necesitas hacer nada más.
   end,
   keys = {
-    -- -- (Opcional) atajo explícito por si quieres tenerlo visible en :map
-    -- { "<C-d>", mode = { "n", "x", "i" }, desc = "VSCode addSelectionToNextFindMatch" },
-    -- { "<C-S-d>", mode = { "n", "x" }, desc = "VSCode addSelectionToPreviousFindMatch" },
+    -- (Opcional) atajo explícito por si quieres tenerlo visible en :map
+    { "<C-d>", mode = { "n", "x", "i" }, desc = "VSCode addSelectionToNextFindMatch" },
+    { "<C-S-d>", mode = { "n", "x" }, desc = "VSCode addSelectionToPreviousFindMatch" },
   },
 }
