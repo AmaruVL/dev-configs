@@ -8,7 +8,7 @@ require("lazy").setup({
   require ("plugins.surround"),
   require ("plugins.flash"),
   require ("plugins.nvimtree"),
-  require ("plugins.multicursor"),
+  require ("plugins.vscode-multicursor"),
   -- require ("plugins.treesitter"),
 })
 
