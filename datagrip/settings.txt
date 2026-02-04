@@ -1,0 +1,8 @@
+1. Ajustar configuracion a compact modo.
+
+2. Cambiar tema por defecto. Favorito usado:
+https://plugins.jetbrains.com/plugin/19291-github-dark-theme
+
+3. Instalar vim y plugins utiles
+Vim: https://plugins.jetbrains.com/plugin/164-ideavim
+Flash: https://plugins.jetbrains.com/plugin/25101-vim-flash
